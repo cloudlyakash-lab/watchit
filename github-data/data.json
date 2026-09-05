@@ -1,0 +1,212 @@
+{
+  "banners": [
+    {
+      "id": "b1",
+      "title": "Avatar: The Way of Water",
+      "image": "https://image.tmdb.org/t/p/original/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "type": "movie",
+      "itemId": "m1"
+    },
+    {
+      "id": "b2",
+      "title": "The Last of Us",
+      "image": "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+      "type": "series",
+      "itemId": "s1"
+    },
+    {
+      "id": "b3",
+      "title": "Oppenheimer",
+      "image": "https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+      "type": "movie",
+      "itemId": "m2"
+    }
+  ],
+
+  "movies": [
+    {
+      "id": "m1",
+      "title": "Avatar: The Way of Water",
+      "description": "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
+      "poster": "https://image.tmdb.org/t/p/w500/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "banner": "https://image.tmdb.org/t/p/original/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
+      "genre": "Action, Adventure, Sci-Fi",
+      "year": "2022",
+      "rating": "7.7",
+      "quality": "HD",
+      "duration": "3h 12m",
+      "streamUrl": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "trailerUrl": "https://www.youtube.com/watch?v=d9MyW72ELq0",
+      "language": "English",
+      "isTrending": true,
+      "isFeatured": true
+    },
+    {
+      "id": "m2",
+      "title": "Oppenheimer",
+      "description": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb during World War II.",
+      "poster": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+      "banner": "https://image.tmdb.org/t/p/original/fm6KqXpk3M2HVveHwCrBSSBaO0V.jpg",
+      "genre": "Biography, Drama, History",
+      "year": "2023",
+      "rating": "8.4",
+      "quality": "WEB-DL",
+      "duration": "3h 0m",
+      "streamUrl": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "trailerUrl": "https://www.youtube.com/watch?v=uYPbbksJxIg",
+      "language": "English",
+      "isTrending": true,
+      "isFeatured": false
+    },
+    {
+      "id": "m3",
+      "title": "Guardians of the Galaxy Vol. 3",
+      "description": "Still reeling from the loss of Gamora, Peter Quill rallies his team to defend the universe and protect one of their own.",
+      "poster": "https://image.tmdb.org/t/p/w500/r2J02Z6HJGlnkAo6NUYBR0bh2KT.jpg",
+      "banner": "https://image.tmdb.org/t/p/original/5YZbUmjbMa3ClvSW1Wj3D6XGkVA.jpg",
+      "genre": "Action, Adventure, Comedy",
+      "year": "2023",
+      "rating": "8.0",
+      "quality": "4K",
+      "duration": "2h 30m",
+      "streamUrl": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "trailerUrl": "https://www.youtube.com/watch?v=u3V5KDHRQvk",
+      "language": "English",
+      "isTrending": false,
+      "isFeatured": false
+    },
+    {
+      "id": "m4",
+      "title": "Sholay",
+      "description": "Two criminals are hired by a retired police officer to capture a ruthless dacoit.",
+      "poster": "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Sholay_poster.jpg/220px-Sholay_poster.jpg",
+      "banner": "https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Sholay_poster.jpg/220px-Sholay_poster.jpg",
+      "genre": "Action, Adventure, Drama",
+      "year": "1975",
+      "rating": "8.2",
+      "quality": "HD",
+      "duration": "3h 24m",
+      "streamUrl": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+      "trailerUrl": "https://www.youtube.com/watch?v=jk9mSSymTGs",
+      "language": "Hindi",
+      "isTrending": false,
+      "isFeatured": false
+    }
+  ],
+
+  "series": [
+    {
+      "id": "s1",
+      "title": "The Last of Us",
+      "description": "After a global pandemic destroys civilization, a hardened survivor takes charge of a 14-year-old girl who may be humanity's last hope.",
+      "poster": "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+      "banner": "https://image.tmdb.org/t/p/original/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+      "genre": "Drama, Horror, Thriller",
+      "year": "2023",
+      "rating": "8.8",
+      "quality": "HD",
+      "language": "English",
+      "trailerUrl": "https://www.youtube.com/watch?v=uqmBBIjCBNA",
+      "totalSeasons": 1,
+      "isTrending": true,
+      "seasons": [
+        {
+          "seasonNumber": 1,
+          "seasonName": "Season 1",
+          "episodes": [
+            {
+              "id": "s1e1",
+              "episodeNumber": 1,
+              "title": "When You're Lost in the Darkness",
+              "thumbnail": "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+              "duration": "1h 21m",
+              "seasonName": "Season 1",
+              "streamUrl": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+              "description": "Twenty years after a fungal outbreak devastates civilization, Joel and Ellie begin a dangerous journey."
+            },
+            {
+              "id": "s1e2",
+              "episodeNumber": 2,
+              "title": "Infected",
+              "thumbnail": "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+              "duration": "55m",
+              "seasonName": "Season 1",
+              "streamUrl": "https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8",
+              "description": "Joel, Tess and Ellie make their way through the bombed-out city of Boston."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "channels": [
+    {
+      "id": "ch1",
+      "name": "Star Plus",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Star_Plus_logo.svg/200px-Star_Plus_logo.svg.png",
+      "streamUrl": "https://live.solidsamba.com/live/playlist.m3u8",
+      "category": "Indian",
+      "isLive": true
+    },
+    {
+      "id": "ch2",
+      "name": "Colors TV",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Colors_TV.svg/200px-Colors_TV.svg.png",
+      "streamUrl": "https://live.solidsamba.com/live/playlist.m3u8",
+      "category": "Indian",
+      "isLive": true
+    },
+    {
+      "id": "ch3",
+      "name": "NTV Bangladesh",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/NTV_BD_logo.svg/200px-NTV_BD_logo.svg.png",
+      "streamUrl": "https://live.solidsamba.com/live/playlist.m3u8",
+      "category": "Bangla",
+      "isLive": true
+    },
+    {
+      "id": "ch4",
+      "name": "BBC World News",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/BBC_World_News_2022.svg/200px-BBC_World_News_2022.svg.png",
+      "streamUrl": "https://live.solidsamba.com/live/playlist.m3u8",
+      "category": "News",
+      "isLive": true
+    },
+    {
+      "id": "ch5",
+      "name": "ESPN",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/200px-ESPN_wordmark.svg.png",
+      "streamUrl": "https://live.solidsamba.com/live/playlist.m3u8",
+      "category": "Sports",
+      "isLive": true
+    },
+    {
+      "id": "ch6",
+      "name": "Cartoon Network",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/200px-Cartoon_Network_2010_logo.svg.png",
+      "streamUrl": "https://live.solidsamba.com/live/playlist.m3u8",
+      "category": "Kids",
+      "isLive": true
+    }
+  ],
+
+  "stars": [
+    { "id": "st1", "name": "Shah Rukh Khan", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Shah_Rukh_Khan_graces_the_launch_of_the_book_written_by_Mushtaq_Shiekh_'I_Am_SRK'_(cropped).jpg/440px-Shah_Rukh_Khan_graces_the_launch_of_the_book_written_by_Mushtaq_Shiekh_'I_Am_SRK'_(cropped).jpg" },
+    { "id": "st2", "name": "Deepika Padukone", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Deepika_Padukone_at_Vogue_Women_of_the_Year_2018_%28cropped%29.jpg/440px-Deepika_Padukone_at_Vogue_Women_of_the_Year_2018_%28cropped%29.jpg" },
+    { "id": "st3", "name": "Tom Cruise", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Tom_Cruise_2013.jpg/440px-Tom_Cruise_2013.jpg" },
+    { "id": "st4", "name": "Scarlett Johansson", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Scarlett_Johansson_2010.jpg/440px-Scarlett_Johansson_2010.jpg" },
+    { "id": "st5", "name": "Mosharraf Karim", "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mosharraf_Karim.jpg/440px-Mosharraf_Karim.jpg" }
+  ],
+
+  "categories": [
+    { "id": "cat1", "name": "Action",     "icon": "🎬" },
+    { "id": "cat2", "name": "Comedy",     "icon": "😂" },
+    { "id": "cat3", "name": "Drama",      "icon": "🎭" },
+    { "id": "cat4", "name": "Horror",     "icon": "👻" },
+    { "id": "cat5", "name": "Sci-Fi",     "icon": "🚀" },
+    { "id": "cat6", "name": "Romance",    "icon": "❤️" },
+    { "id": "cat7", "name": "Thriller",   "icon": "🔪" },
+    { "id": "cat8", "name": "Animation",  "icon": "✨" }
+  ]
+}

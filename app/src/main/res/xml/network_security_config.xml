@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+
+    <!-- Allow HTTP cleartext for circleftp.net FTP CDN links -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">circleftp.net</domain>
+    </domain-config>
+
+    <!-- Allow HTTP cleartext for private IP ranges (172.16.x.x, 192.168.x.x, 10.x.x.x) -->
+    <!-- all_movies__2_.json এর poster ও stream URL গুলো এই private IP থেকে আসে -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">172.16.50.7</domain>
+    </domain-config>
+
+    <!--
+        ⚠️  যদি ভবিষ্যতে অন্য private IP (যেমন 172.16.50.8, 192.168.x.x) যোগ হয়,
+        তাহলে এখানে আরও <domain-config> block যোগ করুন।
+        অথবা সব HTTP allow করতে নিচের base-config পরিবর্তন করুন:
+        <base-config cleartextTrafficPermitted="true" />
+        কিন্তু সেটা security-wise ভালো না।
+    -->
+
+    <!-- All other traffic: HTTPS only -->
+    <base-config cleartextTrafficPermitted="false" />
+
+</network-security-config>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- fragment_series.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- ══ Filter Bar: Genre + Year ══════════════════════════════════════ -->
+    <LinearLayout
+        android:id="@+id/filterBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/surface_card"
+        android:elevation="4dp"
+        android:visibility="gone">
+
+        <!-- Row 1: Genre / Category chips -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"/>
+
+        </HorizontalScrollView>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:background="@color/background"/>
+
+        <!-- Row 2: Year chips -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="8dp">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleSelection="true"
+                app:selectionRequired="true"/>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <!-- ══ SwipeRefreshLayout wraps content area ══════════════════════════ -->
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- Shimmer loading skeleton -->
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="visible">
+                <include layout="@layout/shimmer_grid"/>
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <!-- Empty state: ফিল্টারে কিছু না পেলে -->
+            <LinearLayout
+                android:id="@+id/layoutEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/ic_series"
+                    android:alpha="0.3"
+                    android:tint="@color/text_secondary"/>
+
+                <TextView
+                    android:id="@+id/tvEmptyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="কোনো সিরিজ পাওয়া যায়নি"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <!-- Series Grid (3 কলাম) -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSeries"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="80dp"
+                android:clipToPadding="false"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

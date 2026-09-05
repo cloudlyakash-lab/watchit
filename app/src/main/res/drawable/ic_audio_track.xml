@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Headphone / audio track icon -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M12,3C7.03,3 3,7.03 3,12v4c0,1.1 0.9,2 2,2h1c1.1,0 2,-0.9 2,-2v-2c0,-1.1 -0.9,-2 -2,-2H5.07C5.56,8.18 8.47,5.5 12,5.5s6.44,2.68 6.93,6.5H17c-1.1,0 -2,0.9 -2,2v2c0,1.1 0.9,2 2,2h1c1.1,0 2,-0.9 2,-2v-4C21,7.03 16.97,3 12,3z"/>
+</vector>

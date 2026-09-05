@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WatchIT</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="home">Home</string>
+    <string name="movies">Movies</string>
+    <string name="series">Series</string>
+    <string name="live_tv">Live TV</string>
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="search">Search</string>
+    <string name="search_hint">Search movies, series, channels…</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="popular_stars">Popular Stars</string>
+    <string name="featured_channels">Featured Channels</string>
+    <string name="continue_watching">Continue Watching</string>
+    <string name="trending_series">Trending Series</string>
+    <string name="watch_now">Watch Now</string>
+    <string name="trailer">TRAILER</string>
+    <string name="no_favorites">No favorites yet.\nTap ♥ to save content.</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="retry">Retry</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="app_version">App Version</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_app">Rate App</string>
+    <string name="loading">Loading…</string>
+    <string name="seasons">Seasons</string>
+    <string name="episodes">Episodes</string>
+</resources>

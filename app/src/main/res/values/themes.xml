@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Font files (poppins_regular.ttf, poppins_bold.ttf, poppins_medium.ttf) are not
+    included in this project. fontFamily reference has been removed to fix build error.
+    To add Poppins font:
+    1. Download from https://fonts.google.com/specimen/Poppins
+    2. Place .ttf files in res/font/ folder with names:
+       poppins_regular_ttf.ttf, poppins_medium_ttf.ttf, poppins_bold_ttf.ttf
+    3. Re-add  <item name="android:fontFamily">@font/poppins_regular</item>  below
+-->
+<resources>
+
+    <style name="Theme.WatchIT" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.WatchIT.Splash" parent="Theme.WatchIT">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.WatchIT.Player" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="WatchIT.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardBackgroundColor">@color/surface_card</item>
+    </style>
+
+    <style name="WatchIT.BottomNav" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface_card</item>
+        <item name="itemIconTint">@color/bottom_nav_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_selector</item>
+    </style>
+
+    <style name="WatchIT.Badge" parent="">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingStart">4dp</item>
+        <item name="android:paddingEnd">4dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="WatchIT.SectionTitle" parent="">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:letterSpacing">0.02</item>
+    </style>
+
+    <style name="WatchIT.RedButton" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/primary_red</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

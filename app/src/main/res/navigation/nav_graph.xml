@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.watchit.fragments.HomeFragment"
+        android:label="Home"/>
+
+    <fragment
+        android:id="@+id/moviesFragment"
+        android:name="com.watchit.fragments.MoviesFragment"
+        android:label="Movies"/>
+
+    <fragment
+        android:id="@+id/liveTvFragment"
+        android:name="com.watchit.fragments.LiveTVFragment"
+        android:label="Live TV"/>
+
+    <fragment
+        android:id="@+id/seriesFragment"
+        android:name="com.watchit.fragments.SeriesFragment"
+        android:label="Series"/>
+
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.watchit.fragments.FavoriteFragment"
+        android:label="Favorites"/>
+
+</navigation>

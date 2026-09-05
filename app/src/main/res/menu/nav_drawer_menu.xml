@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_movies"
+            android:icon="@drawable/ic_movie"
+            android:title="Movies"/>
+        <item
+            android:id="@+id/nav_series"
+            android:icon="@drawable/ic_series"
+            android:title="Series"/>
+        <item
+            android:id="@+id/nav_live_tv"
+            android:icon="@drawable/ic_live_tv"
+            android:title="Live TV"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_server_group"
+            android:icon="@drawable/ic_settings"
+            android:title="Select Server">
+            <menu>
+                <item
+                    android:id="@+id/nav_server_1"
+                    android:title="🟢 Server 1"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/nav_server_2"
+                    android:title="🟡 Server 2"
+                    android:checkable="true"/>
+                <item
+                    android:id="@+id/nav_server_3"
+                    android:title="🔵 Server 3"
+                    android:checkable="true"/>
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings"/>
+    </group>
+
+</menu>

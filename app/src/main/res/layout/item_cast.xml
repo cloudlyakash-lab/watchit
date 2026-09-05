@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_cast.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginEnd="12dp"
+    android:paddingBottom="4dp">
+
+    <!-- Circular photo -->
+    <ImageView
+        android:id="@+id/ivCastPhoto"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:scaleType="centerCrop"/>
+
+    <!-- Actor name -->
+    <TextView
+        android:id="@+id/tvCastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:textColor="@color/text_primary"
+        android:textSize="11sp"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"/>
+
+    <!-- Character name -->
+    <TextView
+        android:id="@+id/tvCharacterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/text_secondary"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:ellipsize="end"/>
+
+</LinearLayout>

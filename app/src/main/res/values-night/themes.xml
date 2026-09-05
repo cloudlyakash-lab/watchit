@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.WatchIT" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/primary_red</item>
+        <item name="colorPrimaryVariant">@color/primary_dark_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSurface">@color/surface_card_dark</item>
+        <item name="colorOnSurface">@color/text_primary_dark</item>
+        <item name="android:colorBackground">@color/background_dark</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+
+    <style name="Theme.WatchIT.Splash" parent="Theme.WatchIT">
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.WatchIT.Player" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

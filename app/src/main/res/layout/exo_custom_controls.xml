@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_player_controls"
+    android:padding="8dp">
+
+    <!-- Progress SeekBar -->
+    <androidx.media3.ui.DefaultTimeBar
+        android:id="@id/exo_progress"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:focusable="true"/>
+
+    <!-- Controls Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Rewind 10s -->
+        <ImageButton
+            android:id="@id/exo_rew"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_rewind_10"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <!-- Previous -->
+        <ImageButton
+            android:id="@id/exo_prev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/exo_icon_previous"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <!-- Play/Pause -->
+        <ImageButton
+            android:id="@id/exo_play_pause"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/exo_icon_play"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <!-- Next -->
+        <ImageButton
+            android:id="@id/exo_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/exo_icon_next"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <!-- Forward 10s -->
+        <ImageButton
+            android:id="@id/exo_ffwd"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_forward_10"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        <!-- Spacer -->
+        <View android:layout_width="0dp" android:layout_height="0dp" android:layout_weight="1"/>
+
+        <!-- Time -->
+        <TextView
+            android:id="@id/exo_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" / "
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@id/exo_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <!-- Audio Track Button -->
+        <ImageButton
+            android:id="@+id/btnAudioTrack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_audio_track"
+            android:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Audio Track"/>
+
+    </LinearLayout>
+
+</LinearLayout>

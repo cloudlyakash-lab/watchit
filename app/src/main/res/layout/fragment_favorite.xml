@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Empty state -->
+        <TextView
+            android:id="@+id/tvNoFavorites"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_favorites"
+            android:textColor="@color/text_secondary"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="80dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvMoviesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Movies"
+            style="@style/WatchIT.SectionTitle"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFavMovies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"/>
+
+        <TextView
+            android:id="@+id/tvSeriesLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Favorite Series"
+            style="@style/WatchIT.SectionTitle"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFavSeries"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            android:paddingBottom="80dp"
+            android:clipToPadding="false"/>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

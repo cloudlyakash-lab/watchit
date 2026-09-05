@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_splash">
+
+    <!-- Subtle top glow -->
+    <View
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/splash_glow_top"
+        android:alpha="0.18"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-80dp"/>
+
+    <!-- Center group: Logo + Name + Tagline -->
+    <LinearLayout
+        android:id="@+id/centerGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/ivLogo"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/ic_app_logo"
+            android:scaleType="fitCenter"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- App Name -->
+        <TextView
+            android:id="@+id/tvAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="6dp"/>
+
+        <!-- Red underline accent -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="3dp"
+            android:background="#DC1E1E"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tvTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stream Everything"
+            android:textSize="13sp"
+            android:textColor="#AAFFFFFF"
+            android:letterSpacing="0.2"/>
+
+    </LinearLayout>
+
+    <!-- Loading indicator at bottom -->
+    <ProgressBar
+        android:id="@+id/lottieLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:indeterminateTint="#DC1E1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="56dp"/>
+
+    <!-- Version text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="v1.0.0"
+        android:textColor="#55FFFFFF"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
